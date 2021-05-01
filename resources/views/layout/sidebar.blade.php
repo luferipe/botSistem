@@ -93,12 +93,12 @@
       </li>
 
        <li class="nav-item {{ active_class(['apps/web']) }}">
-        <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['web/*']) }}" aria-controls="web">
+        <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['shop/*']) }}" aria-controls="web">
           <i class="link-icon" data-feather="shopping-cart"></i>
           <span class="link-title">Loja Online</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ show_class(['shop/*']) }}" id="web">
+        <div class="collapse {{ show_class(['shop/*']) }}" id="shop">
           <ul class="nav sub-menu">
             <li class="nav-item">
               <a href="{{ url('/#') }}" class="nav-link {{ active_class(['shop/estoque']) }}">Estoque</a>
