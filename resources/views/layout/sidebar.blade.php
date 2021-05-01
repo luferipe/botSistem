@@ -27,13 +27,36 @@
         </a>
       </li>
 
+      <!-- Vendedor -->
         <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
             <a href="{{ url('/#') }}" class="nav-link">
             <i class="link-icon" data-feather="coffee"></i>
             <span class="link-title">Vendedor</span>
             </a>
         </li>
-        
+
+         <li class="nav-item {{ active_class(['vendedor/*']) }}">
+        <a class="nav-link" data-toggle="collapse" href="#vendedor" role="button" aria-expanded="{{ is_active_route(['vendedor/*']) }}" aria-controls="vendedor">
+          <i class="link-icon" data-feather="coffee"></i>
+          <span class="link-title">vendedor</span>
+          <i class="link-arrow" data-feather="chevron-down"></i>
+        </a>
+        <div class="collapse {{ show_class(['vendedor/*']) }}" id="vendedor">
+          <ul class="nav sub-menu">
+            <li class="nav-item">
+              <a href="{{ url('/vendedor/chat') }}" class="nav-link {{ active_class(['vendedor/chat']) }}">Chat</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/vendedor/agenda') }}" class="nav-link {{ active_class(['vendedor/agenda']) }}">Agenda</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/vendedor/clientes') }}" class="nav-link {{ active_class(['vendedor/clientes']) }}">Clientes</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+    <!-- email -->
         <li class="nav-item {{ active_class(['email/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
           <i class="link-icon" data-feather="mail"></i>
