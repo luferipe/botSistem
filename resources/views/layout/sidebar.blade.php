@@ -113,6 +113,26 @@
         </div>
       </li>
 
+      <!-- Bot -->
+
+      <li class="nav-item nav-category">Robos</li>
+        <li class="nav-item {{ active_class(['robos/*']) }}">
+        <a class="nav-link" data-toggle="collapse" href="#robos" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="robos">
+          <i class="link-icon" data-feather="robos"></i>
+          <span class="link-title">Robos</span>
+          <i class="link-arrow" data-feather="slack"></i>
+        </a>
+        <div class="collapse {{ show_class(['robos/*']) }}" id="robos">
+          <ul class="nav sub-menu">
+            <li class="nav-item">
+              <a href="{{ url('robos/#') }}" class="nav-link {{ active_class(['robos/webmotors']) }}">Webmotors</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('robos/#') }}" class="nav-link {{ active_class(['robos/olx']) }}">OLX</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('robos/#') }}" class="nav-link {{ active_class(['robos/mercadolivre']) }}">Mercado Livre</a>
+            </li>
 
       <!-- Gerenciamento de Usuários -->
       <li class="nav-item nav-category">Controle de Acesso</li>
