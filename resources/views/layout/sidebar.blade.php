@@ -18,6 +18,7 @@
           <span class="link-title">Painel</span>
         </a>
       </li>
+      <!-- Aplicações -->
       <li class="nav-item nav-category">Aplicações</li>
        <li class="nav-item {{ active_class(['apps/calendar']) }}">
         <a href="{{ url('/#') }}" class="nav-link">
@@ -31,7 +32,28 @@
           <span class="link-title">Vendedor</span>
         </a>
       </li>
+      <!-- Gerenciamento de Usuários -->
+      <li class="nav-item nav-category">Usuários</li>
+       <li class="nav-item {{ active_class(['apps/calendar']) }}">
+        <a href="{{ url('/#') }}" class="nav-link">
+          <i class="link-icon" data-feather="zap"></i>
+          <span class="link-title">Criar</span>
+        </a>
+      </li>
+      <li class="nav-item {{ active_class(['apps/calendar']) }}">
+        <a href="{{ url('/#') }}" class="nav-link">
+          <i class="link-icon" data-feather="coffee"></i>
+          <span class="link-title">Editar</span>
+        </a>
+      </li>
+      <li class="nav-item {{ active_class(['apps/calendar']) }}">
+        <a href="{{ url('/#') }}" class="nav-link">
+          <i class="link-icon" data-feather="coffee"></i>
+          <span class="link-title">Listar</span>
+        </a>
+      </li>
 
+      <!-- Ferramentas -->
        <li class="nav-item nav-category">Ferramentas</li>
        <li class="nav-item {{ active_class(['email/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
