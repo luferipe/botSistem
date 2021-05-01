@@ -33,13 +33,9 @@
         </a>
       </li>
       <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
-        <a href="{{ url('/#') }}" class="nav-link">
+        <a class="nav-link" data-toggle="collapse" href="#users" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="users">
           <i class="link-icon" data-feather="shopping-cart"></i>
           <span class="link-title">Loja Online</span>
-        </a>
-        <a class="nav-link" data-toggle="collapse" href="#users" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="users">
-          <i class="link-icon" data-feather="user"></i>
-          <span class="link-title">Usuários</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
         <div class="collapse {{ show_class(['users/*']) }}" id="users">
