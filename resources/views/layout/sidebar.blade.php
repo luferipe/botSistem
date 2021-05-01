@@ -33,23 +33,23 @@
         </a>
       </li>
       <!-- Gerenciamento de Usuários -->
-      <li class="nav-item nav-category">Usuários</li>
+      <li class="nav-item nav-category">Controle de Acesso</li>
     <li class="nav-item {{ active_class(['users/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#users" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="users">
           <i class="link-icon" data-feather="user"></i>
-          <span class="link-title">Email</span>
+          <span class="link-title">Usuários</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ show_class(['users/*']) }}" id="email">
+        <div class="collapse {{ show_class(['users/*']) }}" id="users">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['users/inbox']) }}">Inbox</a>
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['users/criar']) }}">Criar</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/read']) }}">Read</a>
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/editar']) }}">Editar</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/email/compose') }}" class="nav-link {{ active_class(['email/compose']) }}">Compose</a>
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/listar']) }}">Listar</a>
             </li>
           </ul>
         </div>
