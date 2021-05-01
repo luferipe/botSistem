@@ -29,13 +29,13 @@
         <div class="collapse {{ show_class(['users/*']) }}" id="users">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['users/criar']) }}">Criar</a>
+              <a href="{{ url('/users/create') }}" class="nav-link {{ active_class(['users/create']) }}">Criar</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/editar']) }}">Editar</a>
+              <a href="{{ url('/users/edit') }}" class="nav-link {{ active_class(['email/edit']) }}">Editar</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/listar']) }}">Listar</a>
+              <a href="{{ url('/users/list') }}" class="nav-link {{ active_class(['email/list']) }}">Listar</a>
             </li>
           </ul>
         </div>
