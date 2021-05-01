@@ -49,7 +49,7 @@
         </div>
       </li>
 
-    <!-- email -->
+      <!-- email -->
         <li class="nav-item {{ active_class(['email/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
           <i class="link-icon" data-feather="mail"></i>
@@ -71,6 +71,11 @@
         </div>
       </li>
 
+      <!-- Loja Online -->
+        <li class="nav-item nav-category">Web Site</li>
+       <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
+        <a href="{{ url('/#') }}" class="nav-link">
+          <i class="link-icon" data-feather="zap"></i>
       <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
         <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['shop/*']) }}" aria-controls="shop">
           <i class="link-icon" data-feather="shopping-cart"></i>
@@ -113,18 +118,6 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item {{ active_class(['apps/chat']) }}">
-        <a href="{{ url('/apps/chat') }}" class="nav-link">
-          <i class="link-icon" data-feather="message-square"></i>
-          <span class="link-title">Chat</span>
-        </a>
-      </li>
-      <li class="nav-item {{ active_class(['apps/calendar']) }}">
-        <a href="{{ url('/apps/calendar') }}" class="nav-link">
-          <i class="link-icon" data-feather="calendar"></i>
-          <span class="link-title">Agenda</span>
-        </a>
-    </li>
     </ul>
   </div>
 </nav>
