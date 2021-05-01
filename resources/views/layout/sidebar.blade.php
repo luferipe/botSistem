@@ -36,19 +36,19 @@
       <li class="nav-item nav-category">Usuários</li>
        <li class="nav-item {{ active_class(['apps/calendar']) }}">
         <a href="{{ url('/#') }}" class="nav-link">
-          <i class="link-icon" data-feather="user-plus"></i>
+          <i class="link-icon" data-feather="user"></i>
           <span class="link-title">Criar</span>
         </a>
       </li>
       <li class="nav-item {{ active_class(['apps/calendar']) }}">
         <a href="{{ url('/#') }}" class="nav-link">
-          <i class="link-icon" data-feather="coffee"></i>
+          <i class="link-icon" data-feather="edit"></i>
           <span class="link-title">Editar</span>
         </a>
       </li>
       <li class="nav-item {{ active_class(['apps/calendar']) }}">
         <a href="{{ url('/#') }}" class="nav-link">
-          <i class="link-icon" data-feather="coffee"></i>
+          <i class="link-icon" data-feather="list"></i>
           <span class="link-title">Listar</span>
         </a>
       </li>
