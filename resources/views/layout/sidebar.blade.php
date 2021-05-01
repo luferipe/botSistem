@@ -72,15 +72,15 @@
       </li>
 
       <!-- Loja Online -->
-        <li class="nav-item nav-category">Web Site</li>
+        <li class="nav-item nav-category">Institucional</li>
 
         <li class="nav-item {{ active_class(['apps/web']) }}">
-        <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['web/*']) }}" aria-controls="web">
+        <a class="nav-link" data-toggle="collapse" href="#web" role="button" aria-expanded="{{ is_active_route(['web/*']) }}" aria-controls="web">
           <i class="link-icon" data-feather="chrome"></i>
           <span class="link-title">WebSite</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ show_class(['shop/*']) }}" id="web">
+        <div class="collapse {{ show_class(['web/*']) }}" id="web">
           <ul class="nav sub-menu">
             <li class="nav-item">
               <a href="{{ url('/#') }}" class="nav-link {{ active_class(['shop/estoque']) }}">Menu</a>
