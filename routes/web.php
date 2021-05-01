@@ -22,12 +22,11 @@ Route::group(['prefix' => 'login'], function(){
 });
 
 /** ROTAS INTERNAS USUARIO */
-Route::group(['prefix' => 'users'], function () {
-    Route::get('/users', 'UserController@index');
+    Route::get('/users/index', 'UserController@index');
     Route::get('/users/create', 'UserController@create');
     Route::get('/users/edit','UserController@edit');
     Route::get('/users/list', 'UserController@list');
-});
+
 
 /** ROTAS DO TEMA */
 Route::group(['prefix' => 'email'], function(){
