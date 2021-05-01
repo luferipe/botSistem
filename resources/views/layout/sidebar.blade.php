@@ -43,7 +43,7 @@
         <div class="collapse {{ show_class(['users/*']) }}" id="users">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['users/criar']) }}">Criar</a>
+              <a class="link-icon" data-feather="user" href="{{ url('/#') }}" class="nav-link {{ active_class(['users/criar']) }}">Criar</a>
             </li>
             <li class="nav-item">
               <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/editar']) }}">Editar</a>
