@@ -27,11 +27,13 @@
         </a>
       </li>
 
-      <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
-        <a href="{{ url('/#') }}" class="nav-link">
-          <i class="link-icon" data-feather="coffee"></i>
-          <span class="link-title">Vendedor</span>
-        </a>
+        <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
+            <a href="{{ url('/#') }}" class="nav-link">
+            <i class="link-icon" data-feather="coffee"></i>
+            <span class="link-title">Vendedor</span>
+            </a>
+        </li>
+        
         <li class="nav-item {{ active_class(['email/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
           <i class="link-icon" data-feather="mail"></i>
@@ -51,7 +53,6 @@
             </li>
           </ul>
         </div>
-      </li>
       </li>
 
       <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
