@@ -57,14 +57,14 @@
           <span class="link-title">Agenda</span>
         </a>
       </li>
-    </ul>
-     <li class="nav-item nav-category">Ferramentas</li>
+       <li class="nav-item nav-category">Ferramentas</li>
        <li class="nav-item {{ active_class(['apps/calendar']) }}">
         <a href="{{ url('/apps/calendar') }}" class="nav-link">
           <i class="link-icon" data-feather="zap"></i>
           <span class="link-title">Anuncios</span>
         </a>
       </li>
+    </ul>
   </div>
 </nav>
 
