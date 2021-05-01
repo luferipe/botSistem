@@ -16,16 +16,17 @@ Route::get('/', function () {
 
 /** Rotas de Login */
 Route::group(['prefix' => 'login'], function(){
-    Route::get('login', function () { return view('pages.auth.login'); });
+    Route::get('login',  function () { return view('pages.auth.login'); });
     Route::get('login', function () { return view('pages.auth.register');
     });
 });
 
 /** ROTAS INTERNAS USUARIO */
 Route::group(['prefix' => 'users'], function () {
-    Route::get('users', function () { return view('pages.users.create'); });
-    Route::get('users', function () { return view('pages.users.edit'); });
-    Route::get('users', function () { return view('pages.users.list'); });
+    Route::get('/users', 'UserController@index');
+    Route::get('/users/create', 'UserController@create');
+    Route::get('/users/edit','UserController@edit');
+    Route::get('/users/list', 'UserController@list');
 });
 
 /** ROTAS DO TEMA */
