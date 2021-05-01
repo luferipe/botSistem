@@ -10,20 +10,22 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('dashboard');
+});
+
+/** Rotas de Login */
 Route::group(['prefix' => 'login'], function(){
     Route::get('login', function () { return view('pages.auth.login'); });
     Route::get('login', function () { return view('pages.auth.register');
     });
 });
 
-/** ROTAS DO SISTEMA */
-
-Route::group(['prefix' => 'dashboard'], function(){
-Route::get('dashboard', function () { return view('dashboard'); });
-});
-
-Route::get('/', function () {
-    return view('dashboard');
+/** ROTAS INTERNAS USUARIO */
+Route::group(['prefix' => 'users'], function () {
+    Route::get('users', function () { return view('pages.users.create'); });
+    Route::get('users', function () { return view('pages.users.edit'); });
+    Route::get('users', function () { return view('pages.users.list'); });
 });
 
 /** ROTAS DO TEMA */
