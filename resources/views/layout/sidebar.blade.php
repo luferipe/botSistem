@@ -73,9 +73,11 @@
 
       <!-- Loja Online -->
         <li class="nav-item nav-category">Web Site</li>
-       <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
+       <li class="nav-item {{ active_class(['apps/website']) }}">
         <a href="{{ url('/#') }}" class="nav-link">
-          <i class="link-icon" data-feather="zap"></i>
+          <i class="link-icon" data-feather="chrome">Web Site</i>
+        </li>
+
       <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
         <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['shop/*']) }}" aria-controls="shop">
           <i class="link-icon" data-feather="shopping-cart"></i>
