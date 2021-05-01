@@ -114,7 +114,7 @@
       </li>
 
       <!-- Bot -->
-
+    <li class="nav-item {{ active_class(['apps/robos']) }}">
       <li class="nav-item nav-category">Robos</li>
         <li class="nav-item {{ active_class(['robos/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#robos" role="button" aria-expanded="{{ is_active_route(['robos/*']) }}" aria-controls="robos">
@@ -133,7 +133,7 @@
             <li class="nav-item">
               <a href="{{ url('robos/#') }}" class="nav-link {{ active_class(['robos/mercadolivre']) }}">Mercado Livre</a>
             </li>
-
+        </li>
       <!-- Gerenciamento de Usuários -->
       <li class="nav-item nav-category">Controle de Acesso</li>
         <li class="nav-item {{ active_class(['users/*']) }}">
