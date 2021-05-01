@@ -10,17 +10,23 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('dashboard');
-});
-
 Route::group(['prefix' => 'login'], function(){
     Route::get('login', function () { return view('pages.auth.login'); });
     Route::get('login', function () { return view('pages.auth.register');
     });
 });
 
+/** ROTAS DO SISTEMA */
+
+Route::group(['prefix' => 'dashboard'], function(){
+Route::get('dashboard', function () { return view('dashboard'); });
+});
+
+Route::get('/', function () {
+    return view('dashboard');
+});
+
+/** ROTAS DO TEMA */
 Route::group(['prefix' => 'email'], function(){
     Route::get('inbox', function () { return view('pages.email.inbox'); });
     Route::get('read', function () { return view('pages.email.read'); });
