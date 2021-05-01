@@ -1,7 +1,7 @@
 <nav class="sidebar">
   <div class="sidebar-header">
     <a href="#" class="sidebar-brand">
-      Sistem<span>Bot</span>
+      SL<span>Auto</span>
     </a>
     <div class="sidebar-toggler not-active">
       <span></span>
@@ -59,13 +59,13 @@
         <div class="collapse {{ show_class(['email/*']) }}" id="email">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/email/inbox') }}" class="nav-link {{ active_class(['email/inbox']) }}">Inbox</a>
+              <a href="{{ url('/email/inbox') }}" class="nav-link {{ active_class(['email/inbox']) }}">Caixa de Entrada</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/email/read') }}" class="nav-link {{ active_class(['email/read']) }}">Read</a>
+              <a href="{{ url('/email/read') }}" class="nav-link {{ active_class(['email/read']) }}">Ler</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/email/compose') }}" class="nav-link {{ active_class(['email/compose']) }}">Compose</a>
+              <a href="{{ url('/email/compose') }}" class="nav-link {{ active_class(['email/compose']) }}">Escrever</a>
             </li>
           </ul>
         </div>
