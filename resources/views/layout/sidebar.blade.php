@@ -34,28 +34,42 @@
       </li>
       <!-- Gerenciamento de Usuários -->
       <li class="nav-item nav-category">Usuários</li>
-       <li class="nav-item {{ active_class(['apps/calendar']) }}">
-        <a href="{{ url('/#') }}" class="nav-link">
+    <li class="nav-item {{ active_class(['users/*']) }}">
+        <a class="nav-link" data-toggle="collapse" href="#users" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="users">
           <i class="link-icon" data-feather="user"></i>
-          <span class="link-title">Criar</span>
+          <span class="link-title">Email</span>
+          <i class="link-arrow" data-feather="chevron-down"></i>
+        </a>
+        <div class="collapse {{ show_class(['users/*']) }}" id="email">
+          <ul class="nav sub-menu">
+            <li class="nav-item">
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['users/inbox']) }}">Inbox</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/read']) }}">Read</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/email/compose') }}" class="nav-link {{ active_class(['email/compose']) }}">Compose</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item {{ active_class(['apps/chat']) }}">
+        <a href="{{ url('/apps/chat') }}" class="nav-link">
+          <i class="link-icon" data-feather="message-square"></i>
+          <span class="link-title">Chat</span>
         </a>
       </li>
       <li class="nav-item {{ active_class(['apps/calendar']) }}">
-        <a href="{{ url('/#') }}" class="nav-link">
-          <i class="link-icon" data-feather="edit"></i>
-          <span class="link-title">Editar</span>
+        <a href="{{ url('/apps/calendar') }}" class="nav-link">
+          <i class="link-icon" data-feather="calendar"></i>
+          <span class="link-title">Agenda</span>
         </a>
-      </li>
-      <li class="nav-item {{ active_class(['apps/calendar']) }}">
-        <a href="{{ url('/#') }}" class="nav-link">
-          <i class="link-icon" data-feather="list"></i>
-          <span class="link-title">Listar</span>
-        </a>
-      </li>
+    </li>
 
       <!-- Ferramentas -->
-       <li class="nav-item nav-category">Ferramentas</li>
-       <li class="nav-item {{ active_class(['email/*']) }}">
+    <li class="nav-item nav-category">Ferramentas</li>
+    <li class="nav-item {{ active_class(['email/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
           <i class="link-icon" data-feather="mail"></i>
           <span class="link-title">Email</span>
@@ -86,7 +100,7 @@
           <i class="link-icon" data-feather="calendar"></i>
           <span class="link-title">Agenda</span>
         </a>
-      </li>
+    </li>
     </ul>
   </div>
 </nav>
