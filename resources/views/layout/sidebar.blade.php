@@ -73,13 +73,32 @@
 
       <!-- Loja Online -->
         <li class="nav-item nav-category">Web Site</li>
-      <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
-        <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['shop/*']) }}" aria-controls="shop">
+
+        <li class="nav-item {{ active_class(['apps/web']) }}">
+        <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['web/*']) }}" aria-controls="web">
+          <i class="link-icon" data-feather="chrome"></i>
+          <span class="link-title">WebSite</span>
+          <i class="link-arrow" data-feather="chevron-down"></i>
+        </a>
+        <div class="collapse {{ show_class(['shop/*']) }}" id="web">
+          <ul class="nav sub-menu">
+            <li class="nav-item">
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['shop/estoque']) }}">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['shop/anuncios']) }}">Rodapé</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+       <li class="nav-item {{ active_class(['apps/web']) }}">
+        <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['web/*']) }}" aria-controls="web">
           <i class="link-icon" data-feather="shopping-cart"></i>
           <span class="link-title">Loja Online</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ show_class(['shop/*']) }}" id="shop">
+        <div class="collapse {{ show_class(['shop/*']) }}" id="web">
           <ul class="nav sub-menu">
             <li class="nav-item">
               <a href="{{ url('/#') }}" class="nav-link {{ active_class(['shop/estoque']) }}">Estoque</a>
@@ -93,6 +112,8 @@
           </ul>
         </div>
       </li>
+
+
       <!-- Gerenciamento de Usuários -->
       <li class="nav-item nav-category">Controle de Acesso</li>
         <li class="nav-item {{ active_class(['users/*']) }}">
