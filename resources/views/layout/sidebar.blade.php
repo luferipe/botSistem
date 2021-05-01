@@ -32,7 +32,11 @@
           <span class="link-title">Vendedor</span>
         </a>
       </li>
-  <li class="nav-item {{ active_class(['users/*']) }}">
+      <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
+        <a href="{{ url('/#') }}" class="nav-link">
+          <i class="link-icon" data-feather="shopping-cart"></i>
+          <span class="link-title">Loja Online</span>
+        </a>
         <a class="nav-link" data-toggle="collapse" href="#users" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="users">
           <i class="link-icon" data-feather="user"></i>
           <span class="link-title">Usuários</span>
@@ -49,7 +53,9 @@
             <li class="nav-item">
               <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/listar']) }}">Listar</a>
             </li>
-            
+          </ul>
+        </div>
+      </li>
       <!-- Gerenciamento de Usuários -->
       <li class="nav-item nav-category">Controle de Acesso</li>
         <li class="nav-item {{ active_class(['users/*']) }}">
