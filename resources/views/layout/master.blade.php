@@ -8,14 +8,14 @@ License: You must have a valid license purchased only from https://themeforest.n
 -->
 <html>
 <head>
-  <title>NobleUI Laravel Admin Dashboard Template</title>
+  <title>Sistema de Gestão e Controle de Veículos</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- CSRF Token -->
   <meta name="_token" content="{{ csrf_token() }}">
-  
+
   <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
 
   <!-- plugin css -->
