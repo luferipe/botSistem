@@ -25,7 +25,9 @@
           <span class="link-title">Anuncios</span>
         </a>
       </li>
-      <li class="nav-item {{ active_class(['email/*']) }}">
+
+       <li class="nav-item nav-category">Ferramentas</li>
+       <li class="nav-item {{ active_class(['email/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
           <i class="link-icon" data-feather="mail"></i>
           <span class="link-title">Email</span>
@@ -55,13 +57,6 @@
         <a href="{{ url('/apps/calendar') }}" class="nav-link">
           <i class="link-icon" data-feather="calendar"></i>
           <span class="link-title">Agenda</span>
-        </a>
-      </li>
-       <li class="nav-item nav-category">Ferramentas</li>
-       <li class="nav-item {{ active_class(['apps/calendar']) }}">
-        <a href="{{ url('/apps/calendar') }}" class="nav-link">
-          <i class="link-icon" data-feather="zap"></i>
-          <span class="link-title">Anuncios</span>
         </a>
       </li>
     </ul>
