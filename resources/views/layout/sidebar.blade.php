@@ -21,7 +21,7 @@
       <li class="nav-item nav-category">Aplicações</li>
        <li class="nav-item {{ active_class(['apps/calendar']) }}">
         <a href="{{ url('/apps/calendar') }}" class="nav-link">
-          <i class="link-icon" data-feather="calendar"></i>
+          <i class="link-icon" data-feather="zap"></i>
           <span class="link-title">Anuncios</span>
         </a>
       </li>
