@@ -94,8 +94,6 @@
       </li>
 
       <!-- Loja Online -->
-        <li class="nav-item nav-category">Institucional</li>
-
         <li class="nav-item {{ active_class(['apps/web']) }}">
         <a class="nav-link" data-toggle="collapse" href="#web" role="button" aria-expanded="{{ is_active_route(['web/*']) }}" aria-controls="web">
           <i class="link-icon" data-feather="chrome"></i>
