@@ -114,7 +114,6 @@
       </li>
 
       <!-- Bot -->
-    <li class="nav-item {{ active_class(['apps/robos']) }}">
       <li class="nav-item nav-category">Robos</li>
         <li class="nav-item {{ active_class(['robos/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#robos" role="button" aria-expanded="{{ is_active_route(['robos/*']) }}" aria-controls="robos">
