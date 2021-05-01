@@ -15,13 +15,13 @@
 @section('content')
     <nav class="page-breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Formulários 2</a></li>
+            <li class="breadcrumb-item"><a href="/users/edit">Formulários 2</a></li>
             <li class="breadcrumb-item active" aria-current="page">Elementos Avançados</li>
         </ol>
     </nav>
 
     <div class="row">
-        <div class="col-lg-6 grid-margin stretch-card">
+        <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Form Validation</h4>
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 grid-margin stretch-card">
+        <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Bootstrap MaxLength</h4>
