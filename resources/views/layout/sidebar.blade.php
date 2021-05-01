@@ -18,6 +18,28 @@
           <span class="link-title">Painel</span>
         </a>
       </li>
+            <!-- Gerenciamento de Usuários -->
+      <li class="nav-item nav-category">Controle de Acesso</li>
+        <li class="nav-item {{ active_class(['users/*']) }}">
+        <a class="nav-link" data-toggle="collapse" href="#users" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="users">
+          <i class="link-icon" data-feather="user"></i>
+          <span class="link-title">Usuários</span>
+          <i class="link-arrow" data-feather="chevron-down"></i>
+        </a>
+        <div class="collapse {{ show_class(['users/*']) }}" id="users">
+          <ul class="nav sub-menu">
+            <li class="nav-item">
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['users/criar']) }}">Criar</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/editar']) }}">Editar</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/listar']) }}">Listar</a>
+            </li>
+          </ul>
+        </div>
+      </li>
       <!-- Aplicações -->
       <li class="nav-item nav-category">Aplicações</li>
        <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
@@ -134,28 +156,6 @@
             </li>
         </div>
         </li>
-      <!-- Gerenciamento de Usuários -->
-      <li class="nav-item nav-category">Controle de Acesso</li>
-        <li class="nav-item {{ active_class(['users/*']) }}">
-        <a class="nav-link" data-toggle="collapse" href="#users" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="users">
-          <i class="link-icon" data-feather="user"></i>
-          <span class="link-title">Usuários</span>
-          <i class="link-arrow" data-feather="chevron-down"></i>
-        </a>
-        <div class="collapse {{ show_class(['users/*']) }}" id="users">
-          <ul class="nav sub-menu">
-            <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['users/criar']) }}">Criar</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/editar']) }}">Editar</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/listar']) }}">Listar</a>
-            </li>
-          </ul>
-        </div>
-      </li>
     </ul>
   </div>
 </nav>
