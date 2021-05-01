@@ -15,8 +15,8 @@
 @section('content')
     <nav class="page-breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/users/edit">Formulários 2</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Elementos Avançados</li>
+            <li class="breadcrumb-item"><a href="/users/">Usuários</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edição</li>
         </ol>
     </nav>
 
@@ -24,12 +24,12 @@
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Form Validation</h4>
-                    <p class="card-description">Read the <a href="https://jqueryvalidation.org/" target="_blank"> Official jQuery Validation Documentation </a>for a full list of instructions and other options.</p>
+                    <h4 class="card-title">Cadastro de Usuários</h4>
+                    <p class="card-description">Insira os dados do usuário para acesso ao sistema</p>
                     <form class="cmxform" id="signupForm" method="get" action="#">
                         <fieldset>
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name">Nome Completo</label>
                                 <input id="name" class="form-control" name="name" type="text">
                             </div>
                             <div class="form-group">
@@ -37,14 +37,14 @@
                                 <input id="email" class="form-control" name="email" type="email">
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Senha</label>
                                 <input id="password" class="form-control" name="password" type="password">
                             </div>
                             <div class="form-group">
-                                <label for="confirm_password">Confirm password</label>
+                                <label for="confirm_password">Confirme a senha</label>
                                 <input id="confirm_password" class="form-control" name="confirm_password" type="password">
                             </div>
-                            <input class="btn btn-primary" type="submit" value="Submit">
+                            <input class="btn btn-primary" type="submit" value="Criar Usuário">
                         </fieldset>
                     </form>
                 </div>
