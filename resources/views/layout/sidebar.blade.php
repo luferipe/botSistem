@@ -20,13 +20,13 @@
       </li>
       <li class="nav-item nav-category">Aplicações</li>
        <li class="nav-item {{ active_class(['apps/calendar']) }}">
-        <a href="{{ url('/apps/calendar') }}" class="nav-link">
+        <a href="{{ url('/#') }}" class="nav-link">
           <i class="link-icon" data-feather="zap"></i>
           <span class="link-title">Comprador</span>
         </a>
       </li>
       <li class="nav-item {{ active_class(['apps/calendar']) }}">
-        <a href="{{ url('/apps/calendar') }}" class="nav-link">
+        <a href="{{ url('/#') }}" class="nav-link">
           <i class="link-icon" data-feather="coffee"></i>
           <span class="link-title">Vendedor</span>
         </a>
