@@ -32,11 +32,11 @@
                                 <label for="name">Nome Completo</label>
                                 <input id="name" class="form-control" name="name" type="text">
                             </div>
-                            <div class="form-group col-6">
+                            <div class="form-group col-6 float-left">
                                 <label for="email">Email</label>
                                 <input id="email" class="form-control" name="email" type="email">
                             </div>
-                            <div class="form-group col-6">
+                            <div class="form-group col-6 float-left">
                                 <label for="phone">Celular</label>
                                 <input id="phone" class="form-control" name="phone" type="tel">
                             </div>
