@@ -33,21 +33,21 @@
         </a>
       </li>
       <li class="nav-item {{ active_class(['apps/aplicacoes']) }}">
-        <a class="nav-link" data-toggle="collapse" href="#users" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="users">
+        <a class="nav-link" data-toggle="collapse" href="#shop" role="button" aria-expanded="{{ is_active_route(['shop/*']) }}" aria-controls="shop">
           <i class="link-icon" data-feather="shopping-cart"></i>
           <span class="link-title">Loja Online</span>
           <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
-        <div class="collapse {{ show_class(['users/*']) }}" id="users">
+        <div class="collapse {{ show_class(['shop/*']) }}" id="shop">
           <ul class="nav sub-menu">
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['users/criar']) }}">Criar</a>
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['shop/estoque']) }}">Estoque</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/editar']) }}">Editar</a>
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['shop/anuncios']) }}">Anuncios</a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['email/listar']) }}">Listar</a>
+              <a href="{{ url('/#') }}" class="nav-link {{ active_class(['shop/listar']) }}">Campanhas</a>
             </li>
           </ul>
         </div>
