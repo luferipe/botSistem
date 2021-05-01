@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+Route::group(['prefix' => 'login'], function(){
+    Route::get('login', function () { return view('pages.auth.login'); });
+    Route::get('login', function () { return view('pages.auth.register');
+    });
+});
+
 Route::group(['prefix' => 'email'], function(){
     Route::get('inbox', function () { return view('pages.email.inbox'); });
     Route::get('read', function () { return view('pages.email.read'); });
