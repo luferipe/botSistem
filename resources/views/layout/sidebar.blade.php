@@ -1,7 +1,7 @@
 <nav class="sidebar">
   <div class="sidebar-header">
     <a href="#" class="sidebar-brand">
-      Noble<span>UI</span>
+      Sistem<span>Bot</span>
     </a>
     <div class="sidebar-toggler not-active">
       <span></span>
@@ -11,14 +11,20 @@
   </div>
   <div class="sidebar-body">
     <ul class="nav">
-      <li class="nav-item nav-category">Main</li>
+      <li class="nav-item nav-category">Home</li>
       <li class="nav-item {{ active_class(['/']) }}">
         <a href="{{ url('/') }}" class="nav-link">
           <i class="link-icon" data-feather="box"></i>
-          <span class="link-title">Dashboard</span>
+          <span class="link-title">Painel</span>
         </a>
       </li>
-      <li class="nav-item nav-category">web apps</li>
+      <li class="nav-item nav-category">Aplicações</li>
+       <li class="nav-item {{ active_class(['apps/calendar']) }}">
+        <a href="{{ url('/apps/calendar') }}" class="nav-link">
+          <i class="link-icon" data-feather="calendar"></i>
+          <span class="link-title">Anuncios</span>
+        </a>
+      </li>
       <li class="nav-item {{ active_class(['email/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#email" role="button" aria-expanded="{{ is_active_route(['email/*']) }}" aria-controls="email">
           <i class="link-icon" data-feather="mail"></i>
@@ -48,7 +54,7 @@
       <li class="nav-item {{ active_class(['apps/calendar']) }}">
         <a href="{{ url('/apps/calendar') }}" class="nav-link">
           <i class="link-icon" data-feather="calendar"></i>
-          <span class="link-title">Calendar</span>
+          <span class="link-title">Agenda</span>
         </a>
       </li>
       <li class="nav-item nav-category">Components</li>
