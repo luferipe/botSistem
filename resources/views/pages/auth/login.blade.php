@@ -14,31 +14,31 @@
           </div>
           <div class="col-md-8 pl-md-0">
             <div class="auth-form-wrapper px-4 py-5">
-              <a href="#" class="noble-ui-logo d-block mb-2">Noble<span>UI</span></a>
-              <h5 class="text-muted font-weight-normal mb-4">Welcome back! Log in to your account.</h5>
+              <a href="#" class="noble-ui-logo d-block mb-2">Sl<span>Auto</span></a>
+              <h5 class="text-muted font-weight-normal mb-4">Bem vindo de volta! Faça login na sua conta.</h5>
               <form class="forms-sample">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
+                  <label for="exampleInputEmail1">Email</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
+                  <label for="exampleInputPassword1">Senha</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" autocomplete="current-password" placeholder="Password">
                 </div>
                 <div class="form-check form-check-flat form-check-primary">
                   <label class="form-check-label">
                     <input type="checkbox" class="form-check-input">
-                    Remember me
+                    Lembre de mim
                   </label>
                 </div>
                 <div class="mt-3">
                   <a href="{{ url('/') }}" class="btn btn-primary mr-2 mb-2 mb-md-0">Login</a>
                   <button type="button" class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
                     <i class="btn-icon-prepend" data-feather="twitter"></i>
-                    Login with twitter
+                    Entrar com twitter
                   </button>
                 </div>
-                <a href="{{ url('/auth/register') }}" class="d-block mt-3 text-muted">Not a user? Sign up</a>
+                <a href="{{ url('/auth/register') }}" class="d-block mt-3 text-muted">Não é um usuário? Inscrever-se</a>
               </form>
             </div>
           </div>

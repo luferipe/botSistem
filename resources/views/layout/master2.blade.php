@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <!--
-Template Name: NobleUI - Laravel Admin Dashboard Template
-Author: NobleUI
-Website: https://www.nobleui.com
-Contact: nobleui123@gmail.com
-License: You must have a valid license purchased only from https://themeforest.net/user/nobleui/portfolio/ in order to legally use the theme for your project.
+Template Name: Blogfacil Template
+Author: luiz Fernando Ribeiro Pereira
+Website: https://www.blogfacil.com.br
+Contact: luferipe@gmail.com
 -->
 <html>
 <head>
@@ -16,7 +15,7 @@ License: You must have a valid license purchased only from https://themeforest.n
   <!-- CSRF Token -->
   <meta name="_token" content="{{ csrf_token() }}">
 
-  <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
+  <link rel="shortcut icon" href="{{ asset('/fav.png') }}">
 
   <!-- plugin css -->
   <link href="{{ asset('assets/fonts/feather-font/css/iconfont.css') }}" rel="stylesheet" />
