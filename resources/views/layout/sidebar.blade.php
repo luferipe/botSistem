@@ -132,6 +132,7 @@
             <li class="nav-item">
               <a href="{{ url('robos/#') }}" class="nav-link {{ active_class(['robos/mercadolivre']) }}">Mercado Livre</a>
             </li>
+        </div>
         </li>
       <!-- Gerenciamento de Usuários -->
       <li class="nav-item nav-category">Controle de Acesso</li>
