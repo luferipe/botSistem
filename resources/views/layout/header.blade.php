@@ -10,21 +10,11 @@
             <i data-feather="search"></i>
           </div>
         </div>
-        <input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
+        <input type="text" class="form-control" id="navbarForm" placeholder="Pesquise aqui...">
       </div>
     </form>
     <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="flag-icon flag-icon-us mt-1" title="us"></i> <span class="font-weight-medium ml-1 mr-1">English</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="languageDropdown">
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-us" title="us" id="us"></i> <span class="ml-1"> English </span></a>
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-fr" title="fr" id="fr"></i> <span class="ml-1"> French </span></a>
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-de" title="de" id="de"></i> <span class="ml-1"> German </span></a>
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-pt" title="pt" id="pt"></i> <span class="ml-1"> Portuguese </span></a>
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-es" title="es" id="es"></i> <span class="ml-1"> Spanish </span></a>
-        </div>
+     <!-- Barra de idiomas removido -->
       </li>
       <li class="nav-item dropdown nav-apps">
         <a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -66,7 +56,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <p>Leonardo Payne</p>
                   <p class="sub-text text-muted">2 min ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Project status</p>
               </div>
             </a>
@@ -78,7 +68,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <p>Carl Henson</p>
                   <p class="sub-text text-muted">30 min ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Client meeting</p>
               </div>
             </a>
@@ -88,9 +78,9 @@
               </div>
               <div class="content">
                 <div class="d-flex justify-content-between align-items-center">
-                  <p>Jensen Combs</p>												
+                  <p>Jensen Combs</p>
                   <p class="sub-text text-muted">1 hrs ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Project updates</p>
               </div>
             </a>
