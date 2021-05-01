@@ -189,7 +189,7 @@ $(function() {
     fixedWeekCount: true,
     // height: 300,
     initialView: 'dayGridMonth',
-    timeZone: 'UTC',
+      timeZone: 'America/Sao_Paulo',
     hiddenDays:[],
     navLinks: 'true',
     // weekNumbers: true,
