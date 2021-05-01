@@ -22,7 +22,13 @@
        <li class="nav-item {{ active_class(['apps/calendar']) }}">
         <a href="{{ url('/apps/calendar') }}" class="nav-link">
           <i class="link-icon" data-feather="zap"></i>
-          <span class="link-title">Anuncios</span>
+          <span class="link-title">Comprador</span>
+        </a>
+      </li>
+      <li class="nav-item {{ active_class(['apps/calendar']) }}">
+        <a href="{{ url('/apps/calendar') }}" class="nav-link">
+          <i class="link-icon" data-feather="coffee"></i>
+          <span class="link-title">Vendedor</span>
         </a>
       </li>
 
