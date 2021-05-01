@@ -117,10 +117,10 @@
 
       <li class="nav-item nav-category">Robos</li>
         <li class="nav-item {{ active_class(['robos/*']) }}">
-        <a class="nav-link" data-toggle="collapse" href="#robos" role="button" aria-expanded="{{ is_active_route(['users/*']) }}" aria-controls="robos">
-          <i class="link-icon" data-feather="robos"></i>
+        <a class="nav-link" data-toggle="collapse" href="#robos" role="button" aria-expanded="{{ is_active_route(['robos/*']) }}" aria-controls="robos">
+          <i class="link-icon" data-feather="slack"></i>
           <span class="link-title">Robos</span>
-          <i class="link-arrow" data-feather="slack"></i>
+          <i class="link-arrow" data-feather="chevron-down"></i>
         </a>
         <div class="collapse {{ show_class(['robos/*']) }}" id="robos">
           <ul class="nav sub-menu">
