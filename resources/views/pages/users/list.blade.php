@@ -8,7 +8,6 @@
                 <li class="breadcrumb-item active" aria-current="page">Listar</li>
             </ol>
         </nav>
-        <h2>Filtro de Pesquisa</h2>
         <form class="needs-validation col-12" novalidate>
             <div class="form-row">
                 <div class="col-md-3 mb-4">
