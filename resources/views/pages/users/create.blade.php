@@ -15,7 +15,7 @@
 @section('content')
     <nav class="page-breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/users/index">Usuários</a></li>
+            <li class="breadcrumb-item"><a href="/users/create">Usuários</a></li>
             <li class="breadcrumb-item active" aria-current="page">Criação</li>
         </ol>
     </nav>

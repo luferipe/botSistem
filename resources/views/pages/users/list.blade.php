@@ -2,6 +2,12 @@
 
 @section('content')
     <div class="row">
+        <nav class="page-breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/users/list">Listar</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Listar</li>
+            </ol>
+        </nav>
         <h2>Filtro de Pesquisa</h2>
         <form class="needs-validation col-12" novalidate>
             <div class="form-row">
