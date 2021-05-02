@@ -42,10 +42,6 @@
                                 <label for="phone">celular</label>
                                 <input id="phone" class="form-control" name="phone" type="tel">
                             </div>
-                            <div class="form-group col-6 float-left">
-                                <label for="user">Usuário</label>
-                                <input id="user" class="form-control" name="user" type="text">
-                            </div>
 
                             <div class="form-group col-6 float-left">
                                 <label>Tipo de Acesso</label>
@@ -53,6 +49,11 @@
                                     <option value="usuario">Usuário</option>
                                     <option value="administrador">Administrador</option>
                                 </select>
+                            </div>
+
+                            <div class="form-group col-6 float-left">
+                                <label for="user">Usuário</label>
+                                <input id="user" class="form-control" name="user" type="text">
                             </div>
 
                             <div class="form-group">
