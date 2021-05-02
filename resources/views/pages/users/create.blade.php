@@ -24,8 +24,6 @@
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Cadastro de Usuários</h4>
-                    <p class="card-description">Insira os dados do usuário para acesso ao sistema</p>
                     <form class="cmxform" id="signupForm" method="get" action="#">
                         <fieldset>
                             <div class="form-group col-12">
@@ -45,7 +43,7 @@
 
                             <div class="form-group col-6 float-left">
                                 <label>Tipo de Acesso</label>
-                                <select class="js-example-basic-single w-100">
+                                <select class="js-example-basic-single w-100 h-25">
                                     <option value="usuario">Usuário</option>
                                     <option value="administrador">Administrador</option>
                                 </select>
